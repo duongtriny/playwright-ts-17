@@ -9,7 +9,7 @@ for (let button of buttons) {
     });
 }
 
-async function clickButtonByLabel(label: string, page: Page) {
+export async function clickButtonByLabel(label: string, page: Page) {
     // let xpath = `//*[(@role='button' or self::button or self::input) and (normalize-space()='${label}' or @value='${label}')]`;
     let typeOne = `//div[@role='button' and normalize-space()='${label}']`;
     let typeTwo = `//button[normalize-space()='${label}']`;
